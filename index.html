@@ -39,12 +39,12 @@
           </div>
           <div class="horizInput">
             <div class="inputBox" style="width: 220px">
-              <input type="text" id="date" required="required" />
+              <input type="date" id="date" required="required" />
               <span>Дата</span>
               <i></i>
             </div>
             <div class="inputBox" style="width: 220px">
-              <input type="text" required="required" />
+              <input id="time" type="time" required="required" />
               <span>Час</span>
               <i></i>
             </div>
@@ -58,7 +58,7 @@
             </div>
           </div>
           <div class="inputBox">
-            <input type="text" required="required" />
+            <input id="agenda" type="text" required="required" />
             <span>Перелік питань порядку денного</span>
             <i></i>
           </div>
@@ -68,7 +68,7 @@
           <img src="img/settings.svg" class="settingsIcon" onclick="showMenu()"
             style="width: 50px; height: 50px; margin-top: 20px" />
           <div class="containerSetting">
-            <div class="backgroundColorImg"></div>
+            <div class="backgroundColorImg bg"></div>
             <button>
               <div class="container-color">
                 <input type="color" id="color" value="#FFFFFF">

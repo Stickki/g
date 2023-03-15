@@ -1,11 +1,3 @@
-:root{
-  --background-inputs-buttons: #4b979c;
-  --text-color-buttons: #424347;
-  --main-background-color: #28282e;
-  --input-text-color: #2f2f2f;
-  --input-span-noactive-color: #83858c;
-}
-
 * {
   margin: 0px;
   padding: 0px;
@@ -33,12 +25,12 @@ body {
   position: relative;
   width: 1440px;
   height: 80px;
-  background-color: var(--background-inputs-buttons);
+  background-color: #4b979c;
 }
 
 .header>p {
   font-size: 24px;
-  color: var(--text-color-buttons);
+  color: #424347;
 }
 
 .logo {
@@ -53,7 +45,7 @@ body {
   flex-direction: row;
   width: 1440px;
   height: 800px;
-  background-color: var(--main-background-color);
+  background-color: #28282e;
   overflow: hidden;
 }
 
@@ -80,7 +72,7 @@ body {
   border: none;
   outline: none;
   font-size: 24px;
-  color: var(--input-text-color);
+  color: #2f2f2f;
   letter-spacing: 0.05em;
   z-index: 2;
   font-size: 20px;
@@ -92,7 +84,7 @@ body {
   top: 8px;
   padding: 20px 10px 10px;
   font-size: 1em;
-  color: var(--input-span-noactive-color);
+  color: #83858c;
   pointer-events: none;
   letter-spacing: 0.05em;
   transition: 0.5s;
@@ -100,7 +92,7 @@ body {
 
 .inputBox input:valid~span,
 .inputBox input:focus~span {
-  color: var(--background-inputs-buttons);
+  color: #4b979c;
   transform: translateX(-6px) translateY(-40px);
   font-size: 16px;
 }
@@ -111,7 +103,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background: var(--background-inputs-buttons);
+  background: #4b979c;
   border-radius: 0px;
   transition: 0.5s;
   pointer-events: none;
@@ -140,7 +132,7 @@ body {
   height: 48px;
   padding-left: 10px;
   border-radius: 10px;
-  background: var(--background-inputs-buttons);
+  background: #4b979c;
   border: none;
   outline: none;
   font-size: 24px;
@@ -155,7 +147,7 @@ body {
 }
 
 .inputBoxList::placeholder {
-  color: var(--text-color-buttons);
+  color: #424347;
 }
 
 .dropBlockList {
@@ -169,7 +161,7 @@ body {
   width: 490px;
   height: auto;
   border-radius: 10px;
-  background: var(--background-inputs-buttons);
+  background: #4b979c;
   z-index: 10;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
@@ -179,7 +171,7 @@ body {
   width: 100%;
   height: 30px;
   font-size: 20px;
-  color: var(--text-color-buttons);
+  color: #424347;
   padding-top: 10px;
   padding-left: 10px;
 }
@@ -187,10 +179,10 @@ body {
 #acceptButton {
   width: 100%;
   height: 50px;
-  background-color: var(--background-inputs-buttons);
+  background-color: #4b979c;
   border: none;
   border-radius: 5px;
-  color: var(--text-color-buttons);
+  color: #424347;
   font-size: 18px;
   margin-top: 40px;
 }
@@ -253,10 +245,10 @@ body {
 .containerSetting>button {
   width: 250px;
   height: 50px;
-  background-color: var(--background-inputs-buttons);
+  background-color: #4b979c;
   border: none;
   border-radius: 5px;
-  color: var(--text-color-buttons);
+  color: #424347;
   font-size: 18px;
 }
 
@@ -267,10 +259,10 @@ body {
 
 .lable-image {
   padding: 13.5px 50px;
-  background-color: var(--background-inputs-buttons);
+  background-color: #4b979c;
   border: none;
   border-radius: 5px;
-  color: var(--text-color-buttons);
+  color: #424347;
   font-size: 18px;
 }
 
@@ -288,4 +280,50 @@ body {
 
 #color {
   position: absolute;
+}
+
+#date {
+  color: transparent;
+}
+
+#date:valid,
+#date:focus {
+  color: #28282e;
+}
+
+#date::-webkit-inner-spin-button,
+#date::-webkit-calendar-picker-indicator {
+  position: absolute;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+#time {
+  color: transparent;
+}
+
+#time:valid,
+#time:focus {
+  color: #28282e;
+}
+
+#time::-webkit-inner-spin-button,
+#time::-webkit-calendar-picker-indicator {
+  position: absolute;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+.print-page {
+
+  padding: 10px 5px;
+  border: 1px solid black;
+  border-radius: 20px;
+
+}
+
+.xz {
+  word-wrap: break-word;
 }

@@ -45,17 +45,32 @@ dropListElement.forEach((elem) => {
 });
 
 const withdrawalCard = () => {
+
+
+
   let printContainet = document.querySelector("#print-container");
   let date = document.querySelector("#date").value;
   let grup = document.querySelector("#grup").value;
   let teach = document.querySelector("#teach").value;
   let nameString = document.querySelector("#surname").value;
+  let agenda = document.querySelector("#agenda").value;
 
   let divPrint = document.createElement("div");
   divPrint.classList.add("print-page");
   // a.style.background = color;
-  divPrint.innerHTML = `<div class="xz">дата проведення:${date}<br>номер нупи №${grup}<br>викладач:${teach}<br>кому:${nameString}</div>`;
+  divPrint.innerHTML = `<div class="xz"><h4>Запрошення на батьківські збори</h4><br>Дата та час проведення: ${date}<br>Номер нупи: ${grup}<br>Класний керівник групи: ${teach}<br>Питання порядку денного:<br>${agenda}<br>Отримувач: ${nameString}</div>`;
   printContainet.append(divPrint);
+
+  let color = document.querySelector('#color').value;
+  divPrint.style.background = color;
+
+  const file = imageInput.files[0];
+  // Створити URL для файлу
+  const imageUrl = URL.createObjectURL(file);
+  // Змінити фон div на обране зображення
+  divPrint.style.backgroundImage = `url(${imageUrl})`;
+  divPrint.style.backgroundSize = 'cover';
+  divPrint.style.backgroundPosition = 'center';
 };
 
 document.querySelector("#acceptButton").onclick = withdrawalCard;
@@ -83,14 +98,11 @@ const dropBlockList2 = async () => {
 if (document.querySelector("#surname")) {
   document.querySelector("#surname").onclick = dropBlockList2;
 }
-// document.querySelector('#color').addEventListener('input', function (ev) {
-//   let color = document.querySelector('#color').value;
-//   premerDiv.style.background = color;
-// });
+
 
 // картинка фону прикладу
 const imageInput = document.querySelector('#image-input');
-const premerDiv = document.querySelector('.backgroundColorImg');
+const premerDiv = document.querySelector('.bg');
 
 imageInput.addEventListener('change', function () {
   // Отримати вибраний файл
@@ -103,11 +115,16 @@ imageInput.addEventListener('change', function () {
   premerDiv.style.backgroundImage = `url(${imageUrl})`;
   premerDiv.style.backgroundSize = 'cover';
   premerDiv.style.backgroundPosition = 'center';
+  document.querySelector('.print-page').style.backgroundImage = `url(${imageUrl})`;
+  document.querySelector('.print-page').style.backgroundSize = 'cover';
+  document.querySelector('.print-page').style.backgroundPosition = 'center';
 });
 
 document.querySelector('#color').addEventListener('input', function (ev) {
   let color = document.querySelector('#color').value;
-  document.querySelector('.backgroundColorImg').style.background = color;
+  premerDiv.style.background = color;
+  document.querySelector('.print-page').style.background = color;
+
 });
 
 
