@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generator</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="main-block">
+    <div class="header">
+      <img src="img/logo.png" class="logo" alt="" />
+      <p>Генерація запрошень на відвідання батьківськіх зборів</p>
+    </div>
+    <div class="wrapper">
+      <div class="generator">
+        <div class="form">
+          <div class="inputBox">
+            <input type="text" id="teach" required="required" />
+            <span>ПІБ керівника групи</span>
+            <i></i>
+          </div>
+          <div class="groupList groupList1">
+            <input type="text" placeholder="Вибиріть номер групи" class="inputBoxList" id="grup" readonly />
+            <div class="dropBlockList dropBlockList1">
+              <div class="dropListElement" onclick="showGroup('14')">14</div>
+              <div class="dropListElement" onclick="showGroup('15')">15</div>
+              <div class="dropListElement" onclick="showGroup('24')">24</div>
+              <div class="dropListElement" onclick="showGroup('25')">25</div>
+              <div class="dropListElement" onclick="showGroup('34')">34</div>
+              <div class="dropListElement" onclick="showGroup('35')">35</div>
+              <div class="dropListElement" onclick="showGroup('44')">44</div>
+              <div class="dropListElement" onclick="showGroup('45')">45</div>
+            </div>
+          </div>
+          <div class="horizInput">
+            <div class="inputBox" style="width: 220px">
+              <input type="text" id="date" required="required" />
+              <span>Дата</span>
+              <i></i>
+            </div>
+            <div class="inputBox" style="width: 220px">
+              <input type="text" required="required" />
+              <span>Час</span>
+              <i></i>
+            </div>
+          </div>
+          <div class="groupList groupList2">
+            <input type="text" placeholder="Виберіть фамілії батьків" class="inputBoxList boxName" id="surname"
+              cursor="pointer" />
+            <div class="dropBlockList dropBlockList2">
+              <!-- Тут список всех в группе автоматом добавлять с помощью json файла -->
+
+            </div>
+          </div>
+          <div class="inputBox">
+            <input type="text" required="required" />
+            <span>Перелік питань порядку денного</span>
+            <i></i>
+          </div>
+          <button id="acceptButton">Згенерувати акнету</button>
+        </div>
+        <div class="settings">
+          <img src="img/settings.svg" class="settingsIcon" onclick="showMenu()"
+            style="width: 50px; height: 50px; margin-top: 20px" />
+          <div class="containerSetting">
+            <div class="backgroundColorImg"></div>
+            <button>
+              <div class="container-color">
+                <input type="color" id="color" value="#FFFFFF">
+              </div>
+              <label for="color">Вибрати колір</label>
+            </button><button>
+              <form enctype="multipart/form-data">
+                <div class="containet-input-image">
+                  <input type="file" id="image-input">
+                </div>
+                <label class="image-input-label" for="image-input">Вибрати картинку</label>
+              </form>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="print-container">
+
+    </section>
+  </div>
+  <script src="js/adder.js"></script>
+  <!-- 
+
+
+
+
+      ▄▌▐▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀​▀▀▀▀▀▀▌
+   ▄▄██▌█ beep beep
+▄▄▄▌▐██▌█ It's a cola holiday
+███████▌█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄​▄▄▄▄▄▄▌
+▀(@)▀▀▀▀▀▀▀(@)(@)▀▀▀▀▀▀▀▀▀▀▀▀▀​▀▀▀▀(@)▀
+
+
+
+
+-->
+</body>
+
+</html>
