@@ -25,7 +25,7 @@
             <i></i>
           </div>
           <div class="inputBox">
-            <input type="text" class=" group" id="grup" required="required"/>
+            <input type="text" class=" group" id="grup" required="required" />
             <span>Впишіть номер групи</span>
             <i></i>
           </div>
@@ -42,7 +42,7 @@
             </div>
           </div>
           <div class="inputBox">
-            <input type="text" class=" group" id="surname" required="required"/>
+            <input type="text" class=" group" id="surname" required="required" />
             <span>Впишіть фамілії батьків</span>
             <i></i>
           </div>
@@ -52,10 +52,11 @@
             <i></i>
           </div>
           <button id="acceptButton" type="submit">Згенерувати акнету</button>
-          <button class="make-photo">Скачати запрошення</button>
+          <button id="print-btn" type="submit">Роздрукувати</button>
+          <button id="download" type="submit">Скачати зображення</button>
         </div>
         <div class="settings">
-          <img src="img/settings.svg" class="settingsIcon" onclick="showMenu()"
+          <img src="img/settings.svg" class="settingsIcon"  onclick="showMenu()"
             style="width: 50px; height: 50px; margin-top: 20px" />
           <div class="containerSetting">
             <div class="backgroundColorImg bg"></div>
@@ -72,14 +73,23 @@
                 <label class="image-input-label" for="image-input">Вибрати картинку</label>
               </form>
             </button>
+            <button>
+              <form enctype="multipart/form-data">
+                <div class="containet-input-image">
+                  <input type="file" id="image-input">
+                </div>
+                <label class="image-input-label" for="image-input">Вибрати колір тексту</label>
+              </form>
+            </button>
           </div>
         </div>
       </div>
     </div>
-    <section id="print-container">
+    <div id="print-container">
 
-    </section>
+    </div>
   </div>
+  <script src="./node_modules/html2canvas/dist/html2canvas.min.js"></script>
   <script src="js/adder.js"></script>
 
   <!-- 
