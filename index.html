@@ -21,14 +21,13 @@
         <div class="form">
           <div class="inputBox">
             <input type="text" id="teach" required="required" />
-            <span>ПІБ керівника групи</span>
+            <span class="span-teach">ПІБ керівника групи</span>
             <i></i>
           </div>
-          <div class="groupList groupList1">
-            <input type="text" placeholder="Вибиріть номер групи" class="inputBoxList" id="grup" />
-            <div class="dropBlockList dropBlockList1">
-
-            </div>
+          <div class="inputBox">
+            <input type="text" class=" group" id="grup" required="required"/>
+            <span>Впишіть номер групи</span>
+            <i></i>
           </div>
           <div class="horizInput">
             <div class="inputBox" style="width: 220px">
@@ -42,17 +41,18 @@
               <i></i>
             </div>
           </div>
-          <div class="groupList groupList2">
-            <input type="text" placeholder="Виберіть фамілії батьків" class="inputBoxList boxName" id="surname"
-              cursor="pointer" />
-
+          <div class="inputBox">
+            <input type="text" class=" group" id="surname" required="required"/>
+            <span>Впишіть фамілії батьків</span>
+            <i></i>
           </div>
           <div class="inputBox">
             <input id="agenda" type="text" required="required" />
             <span>Перелік питань порядку денного</span>
             <i></i>
           </div>
-          <button id="acceptButton">Згенерувати акнету</button>
+          <button id="acceptButton" type="submit">Згенерувати акнету</button>
+          <button class="make-photo">Скачати запрошення</button>
         </div>
         <div class="settings">
           <img src="img/settings.svg" class="settingsIcon" onclick="showMenu()"
@@ -63,7 +63,7 @@
               <div class="container-color">
                 <input type="color" id="color" value="#FFFFFF">
               </div>
-              <label for="color">Вибрати колір</label>
+              <label for="color" class="change-color">Вибрати колір</label>
             </button><button>
               <form enctype="multipart/form-data">
                 <div class="containet-input-image">
@@ -81,6 +81,7 @@
     </section>
   </div>
   <script src="js/adder.js"></script>
+
   <!-- 
 
 
