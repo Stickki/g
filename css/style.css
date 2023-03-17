@@ -353,6 +353,7 @@ body {
   color: #424347;
   font-size: 18px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .error {
@@ -543,4 +544,7 @@ body {
 
 .color-true-v {
   color: #f6f6f6;
+}
+button{
+  cursor: pointer;
 }
