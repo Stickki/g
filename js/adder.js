@@ -121,6 +121,7 @@ class GenerateDocument extends CreateDocument {
       countPage++
       if (countPage == 6) {
         this.arrDocument[i].classList.add("page-break")
+        countPage = 0;
       }
     }
     window.print();
