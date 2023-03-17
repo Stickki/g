@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
@@ -15,7 +17,7 @@ body {
 
 .main-block {
   display: block;
-  max-width: 1440px;
+  width: 1440px;
 }
 
 .header {
@@ -25,12 +27,13 @@ body {
   position: relative;
   width: 1440px;
   height: 80px;
-  background-color: #8684C7;
+  background-color: #8684c7;
+  font-family: Montserrat;
 }
 
 .header>p {
   font-size: 24px;
-  color: #F6F6F6;
+  color: #f6f6f6;
 }
 
 .logo {
@@ -45,7 +48,7 @@ body {
   flex-direction: row;
   width: 1440px;
   height: 800px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   overflow: hidden;
 }
 
@@ -72,7 +75,7 @@ body {
   border: none;
   outline: none;
   font-size: 24px;
-  color: #F6F6F6;
+  color: #f6f6f6;
   letter-spacing: 0.05em;
   z-index: 2;
   font-size: 20px;
@@ -84,7 +87,7 @@ body {
   top: 8px;
   padding: 20px 10px 10px;
   font-size: 1em;
-  color: #83858c;
+  color: #2f2c7b;
   pointer-events: none;
   letter-spacing: 0.05em;
   transition: 0.5s;
@@ -92,7 +95,7 @@ body {
 
 .inputBox input:valid~span,
 .inputBox input:focus~span {
-  color: #8684C7;
+  color: #8684c7;
   transform: translateX(-6px) translateY(-40px);
   font-size: 16px;
 }
@@ -102,8 +105,8 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 2px;
-  background: #8684C7;
+  height: 2.5px;
+  background: #8684c7;
   border-radius: 0px;
   transition: 0.5s;
   pointer-events: none;
@@ -132,7 +135,7 @@ body {
   height: 48px;
   padding-left: 10px;
   border-radius: 10px;
-  background: #8684C7;
+  background: #8684c7;
   border: none;
   outline: none;
   font-size: 24px;
@@ -147,7 +150,7 @@ body {
 }
 
 .inputBoxList::placeholder {
-  color: #F6F6F6;
+  color: #f6f6f6;
 }
 
 .dropBlockList {
@@ -161,7 +164,7 @@ body {
   width: 490px;
   height: auto;
   border-radius: 10px;
-  background: #8684C7;
+  background: #8684c7;
   z-index: 10;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
@@ -171,7 +174,7 @@ body {
   width: 100%;
   height: 30px;
   font-size: 20px;
-  color: #F6F6F6;
+  color: #f6f6f6;
   padding-top: 10px;
   padding-left: 10px;
 }
@@ -179,10 +182,10 @@ body {
 #acceptButton {
   width: 100%;
   height: 50px;
-  background-color: #8684C7;
+  background-color: #8684c7;
   border: none;
   border-radius: 5px;
-  color: #F6F6F6;
+  color: #f6f6f6;
   font-size: 18px;
   margin-top: 40px;
 }
@@ -245,10 +248,10 @@ body {
 .containerSetting>button {
   width: 250px;
   height: 50px;
-  background-color: #8684C7;
+  background-color: #8684c7;
   border: none;
   border-radius: 5px;
-  color: #F6F6F6;
+  color: #f6f6f6;
   font-size: 18px;
 }
 
@@ -259,7 +262,7 @@ body {
 
 .lable-image {
   padding: 13.5px 50px;
-  background-color: #8684C7;
+  background-color: #8684c7;
   border: none;
   border-radius: 5px;
   color: #424347;
@@ -282,13 +285,17 @@ body {
   position: absolute;
 }
 
+#color-text {
+  position: absolute;
+}
+
 #date {
   color: transparent;
 }
 
 #date:valid,
 #date:focus {
-  color: #F6F6F6;
+  color: #f6f6f6;
 }
 
 #date::-webkit-inner-spin-button,
@@ -305,7 +312,7 @@ body {
 
 #time:valid,
 #time:focus {
-  color: #F6F6F6;
+  color: #f6f6f6;
 }
 
 #time::-webkit-inner-spin-button,
@@ -317,10 +324,8 @@ body {
 }
 
 .print-page {
-
   padding: 10px 5px;
   border: 1px solid black;
-
 }
 
 .xz {
@@ -328,17 +333,21 @@ body {
 }
 
 .image-input-label {
-  padding: 12px 50px;
+  padding: 12px 40px;
 }
 
 .change-color {
-  padding: 12px 50px;
+  padding: 12px 65px;
+}
+
+.change-color-text {
+  padding: 12px 40px;
 }
 
 .make-photo {
   width: 100%;
   height: 50px;
-  background-color: #8684C7;
+  background-color: #8684c7;
   border: none;
   border-radius: 5px;
   color: #424347;
@@ -350,7 +359,6 @@ body {
   color: red;
   border-color: red;
   opacity: 1;
-
 }
 
 .group::placeholder {
@@ -361,29 +369,27 @@ body {
   padding: 27px 0;
   margin: 10px 0;
   flex: 0 0 calc(33.33% - 12.5px);
-
 }
 
 #print-container {
   padding: 56px 24px 169px;
   padding-bottom: 20px;
-  background-color: #8684C7;
+  background-color: #8684c7;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-
 .title-page {
   margin: 27px 70px 27px 50px;
   font-size: 20px;
-  font-weight: 700px;
+  font-weight: 700;
   text-align: center;
   display: block;
 }
 
 .containet-text-page {
-  margin-left: 27px;
+  margin: 0 27px;
 }
 
 .containet-text-page p {
@@ -395,7 +401,6 @@ body {
   body * {
     visibility: hidden;
     display: none;
-
   }
 
   #print-container,
@@ -406,8 +411,6 @@ body {
     visibility: visible;
     position: relative;
   }
-
-
 }
 
 /* стилізація для вікна друку */
@@ -423,8 +426,6 @@ body {
     margin-left: 180px;
     padding-left: 70px;
     margin-top: -100px;
-    ;
-
   }
 
   .print-page {
@@ -440,20 +441,106 @@ body {
 #print-btn {
   width: 100%;
   height: 50px;
-  background-color: #8684C7;
+  background-color: #8684c7;
   border: none;
   border-radius: 5px;
-  color: #F6F6F6;
+  color: #f6f6f6;
   font-size: 18px;
   margin-top: 20px;
 }
+
 #download {
   width: 100%;
   height: 50px;
-  background-color: #8684C7;
+  background-color: #8684c7;
   border: none;
   border-radius: 5px;
-  color: #F6F6F6;
+  color: #f6f6f6;
   font-size: 18px;
   margin-top: 20px;
+}
+
+#grup::-webkit-outer-spin-button,
+#grup::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+@media print {
+  @page {
+    size: auto;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .main-block {
+    width: 1100px;
+  }
+
+  .header {
+    width: 1100px;
+  }
+
+  .generator {
+    width: 1100px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .main-block {
+    width: 1050px;
+  }
+
+  .header {
+    width: 1050px;
+  }
+
+  .generator {
+    width: 1050px;
+  }
+
+  .form {
+    padding: 30px 50px;
+  }
+}
+
+.disp-none {
+  display: none;
+}
+
+.data-i {
+  position: absolute;
+  left: 200px;
+  bottom: 28px;
+  z-index: 1000;
+}
+
+.fa-calendar {
+  color: #8684c7;
+}
+
+.time-i {
+  position: absolute;
+  left: 200px;
+  bottom: 28px;
+  z-index: 1000;
+}
+
+.fa-clock-o {
+  color: #8684c7;
+}
+
+.color-fals {
+  color: #8684c7;
+}
+
+.color-true {
+  color: #f6f6f6;
+}
+
+.color-true-v {
+  color: #f6f6f6;
 }
